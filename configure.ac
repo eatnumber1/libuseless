@@ -1,5 +1,6 @@
 AC_PREREQ(2.59)
 AC_INIT(libspinner, 0.0.1, [russ@eatnumber1.com])
+AC_CONFIG_FILES(libspinner.pc)
 
 AM_INIT_AUTOMAKE
 
