@@ -1,0 +1,11 @@
+AC_PREREQ(2.59)
+AC_INIT(libspinner, 0.0.1, [russ@eatnumber1.com])
+
+AM_INIT_AUTOMAKE
+
+AC_LANG(C)
+AC_PROG_CC
+AC_PROG_LIBTOOL
+
+AC_CONFIG_FILES(Makefile)
+AC_OUTPUT
