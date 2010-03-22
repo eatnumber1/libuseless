@@ -4,7 +4,7 @@
 
 #include "spinner.h"
 
-int spinner( FILE *stream ) {
+int spinner() {
 	return fspinner(stdout);
 }
 

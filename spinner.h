@@ -2,6 +2,6 @@
 #define SPINNER_H
 
 int fspinner( FILE *stream );
-int spinner( FILE *stream );
+int spinner();
 
 #endif
