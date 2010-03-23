@@ -10,6 +10,9 @@ CLEANFILES = $(MAN3PAGES) $(MAN7PAGES)
 man3_MANS = $(MAN3PAGES)
 man7_MANS = $(MAN7PAGES)
 
+maintainer-clean-generic:
+	$(RM) Makefile.in
+
 .pod.3:
 	$(POD2MAN) --center "$(DESCRIPTION)" --section 3 $< > $@
 
