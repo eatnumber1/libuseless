@@ -1,0 +1,35 @@
+=pod
+
+=head1 NAME
+
+prime, fprime, nprime, fnprime - calculate primes forever
+
+=head1 SYNOPSIS
+
+#include <noreturn.h>
+
+int fnprime( FILE *I<stream>, unsigned long long int I<start> );
+
+int nprime( unsigned long long int I<start> );
+
+int fprime( FILE *I<stream> );
+
+int prime( void );
+
+=head1 DESCRIPTION
+
+The C<fnprime()> function calcluates primes, starting at I<start>, and printing them to I<stream> forever.
+
+The C<fprime()> function is similar, except it always starts at I<2>.
+
+The C<nprime()> function is similar, except it starts at I<start>, and prints to I<stdout>.
+
+The C<prime()> function is similar, except it starts at I<2>, and prints to I<stdout>.
+
+=head1 RETURN VALUE
+
+C<prime()>, C<nprime()>, C<fprime()> and C<fnprime()> return -1 and set errno on error, otherwise they do not return.
+
+=head1 AUTHOR
+
+libuseless was written by Russell Harmon.

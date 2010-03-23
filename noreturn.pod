@@ -1,0 +1,21 @@
+=pod
+
+=head1 NAME
+
+noreturn - Non-returning function library
+
+=head1 SYNOPSIS
+
+#include <noreturn.h>
+
+=head1 DESCRIPTION
+
+noreturn is a suite of functions designed to waste your CPU time doing something useless. Once called, these functions will never return unless there is an error.
+
+=head1 SEE ALSO
+
+L<prime(3)>
+
+=head1 AUTHOR
+
+libuseless was written by Russell Harmon.
