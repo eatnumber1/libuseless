@@ -17,4 +17,4 @@ ltmain.sh
 missing
 *.o
 *.lo
-libspinner.pc
+libuseless.pc
