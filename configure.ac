@@ -20,5 +20,9 @@ if test x"$POD2MAN" = x""; then
 fi
 AC_SUBST(POD2MAN)
 
-AC_CONFIG_FILES(Makefile)
+AC_CONFIG_FILES(
+	Makefile
+	doc/Makefile
+	src/Makefile
+)
 AC_OUTPUT
