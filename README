@@ -5,3 +5,4 @@ This package provides several functions for doing various "not really useful" th
 Examples include:
 
 Printing a spinner (/, -, \, |) to a stream.
+Calculating primes forever
