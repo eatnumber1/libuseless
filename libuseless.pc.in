@@ -3,8 +3,8 @@ exec_prefix=@prefix@
 libdir=@libdir@
 includedir=@prefix@/include
 
-Name: libspinner
-Description: Library for producing a simple spinner.
+Name: libuseless
+Description: The Useless Programming Library
 Version: @VERSION@
-Libs: -L${libdir} -lspinner
+Libs: -L${libdir} -luseless
 Cflags: -I${includedir}
