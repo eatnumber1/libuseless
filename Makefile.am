@@ -9,8 +9,8 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libuseless.pc
 
 lib_LTLIBRARIES = libuseless.la
-libuseless_la_SOURCES = spinner.c
-include_HEADERS = spinner.h
+libuseless_la_SOURCES = spinner.c noreturn.c
+include_HEADERS = spinner.h noreturn.h
 man3_MANS = $(MANPAGES)
 
 maintainer-clean-generic:

@@ -34,3 +34,5 @@ int fspinner( FILE *stream ) {
 	position = (position + 1) % 4;
 	return 0;
 }
+
+// vim:ts=4
