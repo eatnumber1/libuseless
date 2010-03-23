@@ -1,5 +1,3 @@
-\.deps/
-\.libs/
 Makefile
 Makefile\.in
 aclocal\.m4
@@ -9,14 +7,9 @@ config\.log
 config\.status
 config\.sub
 configure
-depcomp
 install-sh
-*\.la
 libtool
 ltmain\.sh
 missing
-*\.o
-*\.lo
 libuseless\.pc
-*\.3
-*\.7
+depcomp
