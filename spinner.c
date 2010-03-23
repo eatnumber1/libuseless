@@ -32,4 +32,5 @@ int fspinner( FILE *stream ) {
 	c = fflush(stream);
 	if( c == EOF ) return -1;
 	position = (position + 1) % 4;
+	return 0;
 }
