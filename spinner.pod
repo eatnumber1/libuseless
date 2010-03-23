@@ -1,0 +1,27 @@
+=pod
+
+=head1 NAME
+
+spinner, fspinner - output of spinners to streams
+
+=head1 SYNOPSIS
+
+#include <spinner.h>
+
+int fspinner( FILE *I<stream> );
+
+int spinner( void );
+
+=head1 DESCRIPTION
+
+C<fspinner()> writes the character '\r', immediately followed by one of '/', '-', '\' and '|' to I<stream> producing a spinner. This function is designed to be called once every "tick."
+
+C<spinner()> writes the spinner to B<stdout>.
+
+=head1 RETURN VALUE
+
+C<fspinner()> and C<spinner()> return 0 on success, or -1 and sets B<errno> on failure.
+
+=head1 AUTHOR
+
+libuseless was written by Russell Harmon.

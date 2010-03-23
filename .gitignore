@@ -18,3 +18,4 @@ missing
 *.o
 *.lo
 libuseless.pc
+spinner.3

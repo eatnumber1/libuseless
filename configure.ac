@@ -10,5 +10,11 @@ AC_LANG(C)
 AC_PROG_CC
 AC_PROG_LIBTOOL
 
+AC_CHECK_PROG(POD2MAN, pod2man, pod2man)
+if test x"$POD2MAN" = x""; then
+	AC_MSG_ERROR([pod2man not found])
+fi
+AC_SUBST(POD2MAN)
+
 AC_CONFIG_FILES(Makefile)
 AC_OUTPUT
