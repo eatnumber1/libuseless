@@ -1,8 +1,11 @@
 The Useless Programming Library
 ===============================================================================
-This package provides several functions for doing various "not really useful" things.
+This package provides several functions for doing various "not really useful"
+things.
 
 Examples include:
 
 Printing a spinner (/, -, \, |) to a stream.
 Calculating primes forever
+
+vim:tw=80
