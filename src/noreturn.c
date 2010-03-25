@@ -1,32 +1,36 @@
 #include "noreturn.h"
 
 #include <stdbool.h>
+#include <math.h>
+#include <assert.h>
 
-int fnprime( FILE *stream, unsigned long long int start ) {
-	unsigned long long int target = start;
+int fnprime( FILE *stream, long double start ) {
+	assert(start > 0);
+	if( start <= 2 ) {
+		if( start == 1 ) fprintf(stream, "%.0Lf, ", start++);
+		fprintf(stream, "%.0Lf, ", start++);
+	}
+	long double target = start;
+	if( fmodl(target, 2) == 0 ) target++;
 	while( true ) {
-		for( unsigned long long int i = 2; i < target; i++ ) {
-			if( target % i == 0 ) {
-				if( stream != NULL ) {
-					if( fprintf(stream, "%lld, ", target) < 0 ) return -1;
-				}
-				goto cont;
-			}
+		long double stop = sqrtl(target);
+		for( long double i = 2; i <= stop; i++ ) {
+			if( fmodl(target, i) == 0 ) goto cont;
 		}
 		if( stream != NULL ) {
-			if( fprintf(stream, "%lld, ", target) < 0 ) return -1;
+			if( fprintf(stream, "%.0Lf, ", target) < 0 ) return -1;
 		}
 cont:
-		target++;
+		target += 2;
 	}
 }
 
-int nprime( unsigned long long int start ) {
+int nprime( long double start ) {
 	return fnprime(stdout, start);
 }
 
 int fprime( FILE *stream ) {
-	return fnprime(stream, 2);
+	return fnprime(stream, 1);
 }
 
 int prime() {

@@ -11,8 +11,19 @@ AC_PROG_CC
 AC_PROG_CC_STDC
 AC_PROG_LIBTOOL
 
-AC_CHECK_HEADER(stdbool.h, [],
-  AC_MSG_ERROR([stdbool.h not found]))
+AC_CHECK_HEADER(stdbool.h, [], [
+  AC_MSG_ERROR([stdbool.h not found])
+])
+AC_CHECK_HEADER(math.h, [], [
+  AC_MSG_ERROR([math.h not found])
+])
+AC_CHECK_HEADER(assert.h, [], [
+  AC_MSG_ERROR([assert.h not found])
+])
+AC_CHECK_LIB(m, sqrt, [], [
+  AC_MSG_ERROR([libm not found])
+])
+
 
 AC_CHECK_PROG(POD2MAN, pod2man, pod2man)
 if test x"$POD2MAN" = x""; then

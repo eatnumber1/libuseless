@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-int fnprime( FILE *stream, unsigned long long int start );
-int nprime( unsigned long long int start );
+int fnprime( FILE *stream, long double start );
+int nprime( long double start );
 int fprime( FILE *stream );
 int prime();
 
