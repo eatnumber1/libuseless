@@ -37,4 +37,10 @@ int prime() {
 	return fprime(stdout);
 }
 
+void frand() {
+	while( true ) {
+		rand();
+	}
+}
+
 // vim:ts=4

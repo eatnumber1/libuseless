@@ -1,6 +1,6 @@
 SUFFIXES = .pod .3 .7
 
-MAN3PAGES = spinner.3 fspinner.3 prime.3 fnprime.3 nprime.3 fprime.3
+MAN3PAGES = spinner.3 fspinner.3 prime.3 fnprime.3 nprime.3 fprime.3 frand.3
 MAN7PAGES = noreturn.7
 
 DESCRIPTION = The Useless Programming Library Programmer\'s Manual

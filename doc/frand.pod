@@ -1,0 +1,23 @@
+=pod
+
+=head1 NAME
+
+frand - generate random numbers forever
+
+=head1 SYNOPSIS
+
+#include <noreturn.h>
+
+void frand( void );
+
+=head1 DESCRIPTION
+
+The C<frand()> function generates random numbers forever.
+
+=head1 RETURN VALUE
+
+C<frand()> does not return.
+
+=head1 AUTHOR
+
+libuseless was written by Russell Harmon.

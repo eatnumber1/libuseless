@@ -8,6 +8,8 @@ int nprime( long double start );
 int fprime( FILE *stream );
 int prime();
 
+void frand();
+
 #endif
 
 // vim:ts=4

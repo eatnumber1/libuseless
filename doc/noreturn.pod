@@ -14,7 +14,7 @@ noreturn is a suite of functions designed to waste your CPU time doing something
 
 =head1 SEE ALSO
 
-L<prime(3)>
+L<prime(3)>, L<frand(3)>
 
 =head1 AUTHOR
 
